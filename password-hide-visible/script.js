@@ -21,3 +21,24 @@ function togglePasswordVisibility() {
   // Focus on the password field
   passwordField.focus();
 }
+
+
+// submit form validation
+
+// Get the form element
+const form = document.getElementById("login-form");
+
+// Add an event listener to the form's submit event
+form.addEventListener("submit", validateForm);
+
+// Function to validate the form
+function validateForm(event) {
+  // Prevent the form from submitting if any input is empty
+  event.preventDefault();
+  if (
+    document.getElementById("email-address-icon").value === "" ||
+    document.getElementById("password").value === ""
+  ) {
+    alert("Please fill in all fields.");
+  }
+}
