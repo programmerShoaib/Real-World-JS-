@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching list of user</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="userDiv" class="flex flex-col items-center justify-center h-screen">
+        <p class="text-3xl font-bold mb-4">Fetching list of user</p>
+        <button id="fetch-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Fetch</button>        
+    </div>
+    <div id="userListDiv" class="flex flex-col items-center justify-center h-screen hidden">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <p class="text-3xl font-bold mb-4">User List</p>
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        ID
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Name
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Email
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Phone
+                    </th>
+                </tr>
+            </thead>
+            <tbody  id="userList">
+            </tbody>
+        </table>
+        <button id="back-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Back</button>
+    </div>
+    <div id="loader" class="flex flex-col items-center justify-center h-screen bg-gray-100 hidden">
+        <!-- Spinning loader with animation -->
+        <div class="loader ease-linear border-4 border-t-4 border-gray-300 border-t-blue-500 rounded-full h-16 w-16 animate-spin mb-6">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <!-- Loading text -->
+        <p class="text-4xl font-semibold text-gray-700">Loading...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
