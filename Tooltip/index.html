@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-white dark:bg-gray-800 h-screen flex flex-col items-center justify-center text-gray-500 dark:text-gray-400">
+        <h1 class="text-2xl font-bold text-gray-900 dark:text-white text-center mb-4">Tooltip</h1>
+        <div id="tooltip-container" class="flex gap-4 mb-4">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" data-tooltip="Tooltip text">Hover over me</button>
+            <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded" data-tooltip="Tooltip text">Hover over me</button>
+            <button class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded" data-tooltip="Tooltip text">Hover over me</button>
+        </div>
+        <span class="">Tooltip text</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

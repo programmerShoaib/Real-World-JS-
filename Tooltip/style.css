@@ -1,0 +1,26 @@
+.tooltip-custom {
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+        .tooltip-custom.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .tooltip-custom::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-color: #333 transparent transparent transparent;
+        }
