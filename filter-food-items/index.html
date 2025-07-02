@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filter Food Items</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 py-10">
+            <!-- Food Filter Container -->
+            <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Food Menu</h2>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-2 mb-6">
+                <button class="px-4 py-2 rounded border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition" data-filter="all">All Items</button>
+                <button class="px-4 py-2 rounded border border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition" data-filter="veg">
+                <i class="fas fa-leaf mr-1"></i> Vegetarian
+                </button>
+                <button class="px-4 py-2 rounded border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition" data-filter="non-veg">
+                <i class="fas fa-drumstick-bite mr-1"></i> Non-Vegetarian
+                </button>
+            </div>
+
+            <!-- Food Cards Container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="foodContainer">
+                <!-- Food cards will be dynamically injected here -->
+            </div>
+
+            <!-- No Items Message -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="foodContainer"></div>
+            <div id="noItemsMessage" class="hidden mt-6 p-4 text-center text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-900 dark:text-blue-300">
+                No items found for the selected filter.
+            </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
