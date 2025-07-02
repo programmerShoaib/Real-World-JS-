@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll to Bottom</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white">
+    <div class="max-w-3xl mx-auto px-4 py-8">
+        <!-- Heading -->
+        <h2 class="text-2xl font-bold mb-2">Long Content Example</h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-4">
+        Scroll down to read the content, then scroll up to see the bottom button appear.
+        </p>
+
+        <!-- Scrollable container -->
+        <div id="contentContainer" class="relative h-[400px] overflow-y-auto p-5 border border-gray-200 rounded-lg bg-gray-100 dark:bg-gray-800 mb-10">
+        <h3 class="text-xl font-semibold mb-3">Stay Motivated!</h3>
+
+        <p class="mb-4">Welcome to our website. We believe in the power of positivity and motivation...</p>
+
+        <h4 class="text-lg font-semibold mt-6 mb-2">1. Believe in Yourself</h4>
+        <p class="mb-4">By accessing this website, you are taking the first step towards a more motivated and inspired life...</p>
+
+        <h4 class="text-lg font-semibold mt-6 mb-2">2. Set Goals</h4>
+        <p class="mb-4">Setting clear and achievable goals is crucial for maintaining motivation and tracking progress...</p>
+
+        <h4 class="text-lg font-semibold mt-6 mb-2">3. Stay Positive</h4>
+        <p class="mb-4">Maintaining a positive mindset can help you overcome challenges and stay focused on your objectives...</p>
+
+        <h4 class="text-lg font-semibold mt-6 mb-2">4. Take Action</h4>
+        <p class="mb-4">Consistent action towards your goals is essential for achieving success and staying motivated...</p>
+
+        <h4 class="text-lg font-semibold mt-6 mb-2">5. Reflect and Improve</h4>
+        <p class="mb-4">Regularly reflecting on your progress and making necessary adjustments can help you stay on track...</p>
+
+        <!-- Sticky floating scroll button -->
+        <div class="sticky bottom-4 left-full ml-[-60px] mt-[-40px] w-10 h-10 z-50 pointer-events-none">
+            <button id="scrollToBottomBtn" title="Scroll to Bottom"
+            class="w-10 h-10 rounded-full bg-blue-600 text-white shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 pointer-events-auto hover:bg-blue-700 hover:scale-110">
+            <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
