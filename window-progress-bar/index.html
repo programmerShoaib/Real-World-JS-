@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Progress Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-[6px] bg-transparent z-[1030]">
+        <div id="scrollProgressBar" 
+            class="h-full w-0 bg-gradient-to-r from-blue-600 to-blue-400 shadow-[0_0_10px_rgba(0,123,255,0.5)] transition-all duration-200 ease-out rounded-r-md" style="background: linear-gradient(90deg, #007bff, #00dbde);">
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-5 px-4">
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold">Scroll Progress Indicator</h1>
+            <p class="text-lg text-gray-600">
+            Scroll down to see the progress bar at the top of the page fill from left to right.
+            </p>
+        </header>
+
+        <!-- Section 1 -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-5 border-b-2 border-gray-100 pb-2">How It Works</h2>
+            <p class="mb-4">
+                As you scroll down the page, the progress bar at the top will fill proportionally
+                to how far you've scrolled through the content. This gives you a visual indication
+                of your position in the document and how much content remains.
+            </p>
+            <div class="bg-blue-50 border border-blue-200 text-blue-700 px-4 py-3 rounded flex items-center">
+                <i class="fas fa-info-circle mr-2"></i>
+                The progress bar is fixed to the top of the viewport and stays visible as you scroll.
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-5 border-b-2 border-gray-100 pb-2">Section 1: Introduction</h2>
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
+                Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
+                rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
+            </p>
+            <p>
+            Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.
+            Praesent id metus massa, ut blandit odio. Proin quis tortor orci.
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-5 border-b-2 border-gray-100 pb-2">Section 2: Benefits</h2>
+            <p class="mb-4">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet
+                augue congue elementum.
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <h5 class="font-semibold text-lg mb-2">Improved Navigation</h5>
+                <p class="text-gray-600">Users always know where they are in the content and how much remains.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <h5 class="font-semibold text-lg mb-2">Visual Feedback</h5>
+                <p class="text-gray-600">Provides satisfying visual feedback as users progress through content.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-4">
+                <h5 class="font-semibold text-lg mb-2">Engagement</h5>
+                <p class="text-gray-600">Encourages users to scroll through the entire content to complete the bar.</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-5 border-b-2 border-gray-100 pb-2">Section 3: Implementation</h2>
+            <p class="mb-4">
+                The scroll progress indicator is implemented using HTML, Tailwind CSS, and JavaScript.
+                It calculates how far the user has scrolled and updates the width of a progress bar.
+            </p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                <li>A fixed container at the top of the viewport</li>
+                <li>A progress bar element that grows as the user scrolls</li>
+                <li>JavaScript to calculate scroll percentage</li>
+                <li>Tailwind transitions for smooth animation</li>
+            </ul>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-5 border-b-2 border-gray-100 pb-2">Section 4: Customization</h2>
+            <p class="mb-4">The scroll progress indicator can be customized in various ways:</p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                <li>Change the color to match your website's theme</li>
+                <li>Adjust the height for more or less prominence</li>
+                <li>Position it at the bottom or side of the page</li>
+                <li>Add gradient colors or animations</li>
+            </ul>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-5 border-b-2 border-gray-100 pb-2">Section 5: Conclusion</h2>
+            <p class="mb-4">
+                Adding a scroll progress indicator improves user experience. It provides visual feedback
+                that helps users understand their position in the content.
+            </p>
+            <p>
+                Once you reach the bottom of the page, the progress bar will be completely filled.
+            </p>
+        </section>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
